@@ -66,10 +66,10 @@ class App1:
     u = self.entry1.get()
     p = self.entry2.get()
     if (("<" in u) or (">" in u)):
-        tk.messagebox.showinfo('Sucess','You cannot use special characters \"<\" or \">\" in your username')
+        tk.messagebox.showinfo('Denied','You cannot use special characters \"<\" or \">\" in your username')
     else:
         if ("<" or ">") in p:
-            tk.messagebox.showinfo('Sucess','You cannot use special characters \"<\" or \">\" in your password')
+            tk.messagebox.showinfo('Denied','You cannot use special characters \"<\" or \">\" in your password')
         else:
             if password_checker(p):
                 MsgBox = tk.messagebox.askquestion ('Terms and policies','Do you Accept our Terms and Policies')
